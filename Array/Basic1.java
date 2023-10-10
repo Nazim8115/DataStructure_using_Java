@@ -8,11 +8,13 @@ class Basic1 {
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = sc.nextInt();
         }
+        sc.close();
 
         // print array
 
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
+
     }
 }
