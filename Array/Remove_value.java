@@ -7,7 +7,7 @@ public class Remove_value {
         for (int i = index; i < arr.length - 1; i++) {
             arr[i] = arr[i + 1];
         }
-        
+        arr[arr.length - 1] = 0;
     }
 
     public static void main(String[] args) {
