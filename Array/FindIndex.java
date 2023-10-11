@@ -13,7 +13,7 @@ public class FindIndex {
 
     public static void main(String[] args) {
         int arr[] = { 10, 20, 40, 30, 50, 90 };
-        int res = findIndex(arr, 30);
+        int res = findIndex(arr, 150);
         System.out.println(res);
     }
 }
