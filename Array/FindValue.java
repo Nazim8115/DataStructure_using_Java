@@ -20,5 +20,6 @@ public class FindValue {
         System.out.println("enter value : ");
         int value = sc.nextInt();
         System.out.println(isValue(arr, value));
+        sc.close();
     }
 }
