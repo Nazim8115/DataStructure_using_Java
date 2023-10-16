@@ -21,6 +21,7 @@ public class Lavel1 {
             j++;
         }
         System.out.println("reverse array is :" + Arrays.toString(reverseArray));
+        sc.close();
 
     }
 }
