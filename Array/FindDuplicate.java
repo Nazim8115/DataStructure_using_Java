@@ -4,7 +4,7 @@ public class FindDuplicate {
     public static int duplicateNumber(int arr[]) {
         int i;
         int j;
-        int a = 0;
+
         for (i = 0; i < arr.length - 1; i++) {
             for (j = i + 1; j < arr.length; j++) {
                 if (arr[i] == arr[j]) {
@@ -27,6 +27,7 @@ public class FindDuplicate {
         }
         int res = duplicateNumber(arr);
         System.out.println(res);
+        sc.close();
 
     }
 }
