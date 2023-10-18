@@ -33,6 +33,7 @@ public class FindUnique {
         }
         int res = findUniquelement(arr);
         System.out.println(res);
+        s.close();
 
     }
 }
