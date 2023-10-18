@@ -30,6 +30,7 @@ public class Intersection2Arrays {
             array2[i] = sc.nextInt();
         }
         intersection(array1, array2);
+        sc.close();
 
     }
 }
