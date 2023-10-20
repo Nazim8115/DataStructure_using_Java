@@ -10,11 +10,14 @@ public class ArrayListToArray {
         list.add("C#");
         list.add("Php");
 
-        System.out.println(list.size());// size of the arraylist
+        System.out.println(list.size());// size of the arraylist...
         // print list using foreach
         for (String string : list) {
             System.out.println(string);
         }
+
+        list.add(0, "nazim khan");// add elemtn at particular index..
+        System.out.println(list.contains("Php"));// if contains element then retun true
 
         String arr[] = new String[list.size()];
         list.toArray(arr);
