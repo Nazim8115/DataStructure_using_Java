@@ -1,6 +1,24 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class Occurance {
+    static void countFreq2(int arr[], int n) {
+        Map<Integer, Integer> mp = new HashMap<>();
+
+        // Traverse through array elements and
+        // count frequencies
+        for (int i = 0; i < n; i++) {
+            if (mp.containsKey(arr[i])) {
+                mp.put(arr[i], mp.get(arr[i]) + 1);
+            } else {
+                mp.put(arr[i], 1);
+            }
+        }
+        // Traverse through map and print frequencies
+        for (Map.Entry<Integer, Integer> entry : mp.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+    }
+
     public static void countFreq(int arr[], int n) {
         boolean visited[] = new boolean[n];
 
@@ -28,7 +46,7 @@ public class Occurance {
 
     public static void main(String[] args) {
         int arr[] = { 1, 2, 22, 1, 90, 80, 60 };
-        countFreq(arr, arr.length);
+        countFreq2(arr, arr.length);
 
     }
 
