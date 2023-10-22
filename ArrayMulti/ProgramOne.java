@@ -1,6 +1,7 @@
 package ArrayMulti;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ProgramOne {
     public static void main(String[] args) {
@@ -15,12 +16,26 @@ public class ProgramOne {
         // }
 
         // ways -2 Using for loop
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
+        // for (int i = 0; i < arr.length; i++) {
+        // for (int j = 0; j < arr[i].length; j++) {
+        // System.out.print(arr[i][j] + " ");
 
+        // }
+        // System.out.println();
+        // }
+
+        // take input from the users
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter rows:");
+        int row = sc.nextInt();
+        System.out.println("Enter Column:");
+        int col = sc.nextInt();
+        int array[][] = new int[row][col];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.println(i + ":" + j);
+                array[i][j] = sc.nextInt();
             }
-            System.out.println();
         }
 
     }
