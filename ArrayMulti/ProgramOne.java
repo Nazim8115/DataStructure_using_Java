@@ -4,6 +4,15 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class ProgramOne {
+    public static void printArray(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // Different Ways to initialize the array ..
         int arr[][] = { { 10, 20, 30 }, { 40, 50, 60 } };
@@ -37,6 +46,9 @@ public class ProgramOne {
                 array[i][j] = sc.nextInt();
             }
         }
+        // print array elements using function printArray
+        printArray(array);
+
 
     }
 }
