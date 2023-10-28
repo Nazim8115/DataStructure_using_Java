@@ -1,6 +1,6 @@
 package ArrayMulti;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 import java.util.Scanner;
 
 public class ProgramOne {
@@ -11,6 +11,19 @@ public class ProgramOne {
             }
             System.out.println();
         }
+    }
+
+    public static void rowWiseSum(int arr[][]) {
+
+        for (int i = 0; i < arr.length; i++) {
+            int row = 0;
+            for (int j = 0; j < arr[i].length; j++) {
+                row += arr[i][j];
+            }
+            System.out.println(i + "th row sum : " + row);
+
+        }
+
     }
 
     public static void main(String[] args) {
@@ -41,14 +54,16 @@ public class ProgramOne {
         int col = sc.nextInt();
         int array[][] = new int[row][col];
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+            for (int j = 0; j < col; j++) {
                 System.out.println(i + ":" + j);
                 array[i][j] = sc.nextInt();
             }
         }
         // print array elements using function printArray
-        printArray(array);
 
+        printArray(array);
+        rowWiseSum(array);
+        sc.close();
 
     }
 }
