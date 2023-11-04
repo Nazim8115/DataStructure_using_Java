@@ -8,5 +8,17 @@ public class Basic_String {
         String s = "java programing";
         System.out.println(s);
 
+        // methods of string
+        // find length of the string
+        int le = s.length();
+        System.out.println(le);
+        // find length witout lenth dunction
+
+        int l = 0;
+
+        for (char c : s.toCharArray()) {
+            l++;
+        }
+
     }
 }
