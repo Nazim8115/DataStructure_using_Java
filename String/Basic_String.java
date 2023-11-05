@@ -38,8 +38,17 @@ public class Basic_String {
          * ) my name is nazim khan
          */
 
-        String userFullName = s.nextLine();
-        System.out.println(userFullName);
+        // String userFullName = s.nextLine();
+        // System.out.println(userFullName);
+        // join java stirng
+        String first = s.nextLine();
+        String second = s.nextLine();
+        // join with + opreator
+        // String third = first + second;
+        // System.out.println(third);
+        // join with concat
+        String concat = first.concat(second);
+        System.out.println(concat);
 
     }
 }
