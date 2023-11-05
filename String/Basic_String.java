@@ -47,8 +47,16 @@ public class Basic_String {
         // String third = first + second;
         // System.out.println(third);
         // join with concat
-        String concat = first.concat(second);
-        System.out.println(concat);
+        // String concat = first.concat(second);
+        // System.out.println(concat);
+
+        // compare two strings
+        // System.err.println(first.compareTo(second)); // compare() return zero if both
+        // string equal if not then if first
+        // string greater positive value else negative value ...
+        // qquals method ()
+        System.out.println(first.equals(second)); // if strings are same then its return true else false...
+        s.close();
 
     }
 }
