@@ -20,6 +20,16 @@ public class StringMethodsAlll {
         // codePointCount() => Returns the number of Unicode values found in string
         // System.out.println(str.codePointCount(0, 6));
 
+        // Compare two strings ignoring lower case and and upper case
+        String str2 = sc.nextLine();
+        // System.out.println(str.compareToIgnoreCase(str2));
+        // concat => appends a string to the end of another string
+        // String result = str.concat(str2);
+        // System.out.println(result);
+
+        // contains => checks wheather a string contains a sequence of characters
+        System.out.println(str.contains(str2));
+
         sc.close();
 
     }
