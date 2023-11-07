@@ -28,7 +28,23 @@ public class StringMethodsAlll {
         // System.out.println(result);
 
         // contains => checks wheather a string contains a sequence of characters
-        System.out.println(str.contains(str2));
+        // System.out.println(str.contains(str2));
+
+        // contentEquals() => Searches a string to find out if it contains the exact
+        // same sequence of characters in the specified strng or StringBuffer
+        // System.out.println(str.contentEquals(str2));
+
+        // copyValueof() => the copyValueOf() method returns a string that represents
+        // the characters of char array.
+        // this mehtod return a new string array and copies the character into it.
+
+        // char[] myStr1 = { 'H', 'e', 'l', 'l', 'o' };
+        // String myStr2 = "";
+        // myStr2 = myStr2.copyValueOf(myStr1, 0, 5);
+        // System.out.println("Returned String: " + myStr2);
+
+        // endsWith() => Checks wheater a string ends with the specified characters
+        System.out.println(str.endsWith(str2));
 
         sc.close();
 
