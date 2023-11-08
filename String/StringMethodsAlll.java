@@ -56,8 +56,19 @@ public class StringMethodsAlll {
         // indexOf() return position of the first specified occurance --
         // System.out.println(str.indexOf(str2));
         // isempty() check weather a string isempty or not return true
+        // System.out.println(str.isEmpty());
 
-        System.out.println(str.isEmpty());
+        // replace() => replace specified value if present return new string
+        // String result = str.replace("nazim", "sumit");
+        // System.out.println("new string is :" + result);
+
+        // split() => split the string into an array of substring
+        // String[] arr = str.split(",");
+        // for (int i = 0; i < arr.length; i++) {
+        //     System.out.println(arr[i]);
+        // }
+        
+        // startswith() =>
 
         sc.close();
 
