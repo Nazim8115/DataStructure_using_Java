@@ -44,7 +44,20 @@ public class StringMethodsAlll {
         // System.out.println("Returned String: " + myStr2);
 
         // endsWith() => Checks wheater a string ends with the specified characters
-        System.out.println(str.endsWith(str2));
+        // System.out.println(str.endsWith(str2));
+
+        // equals () => use for compares two strings,and return true if string are equal
+        // Tip: Use the compareTo() method to compare two strings lexicographically.
+        // System.out.println(str.equals(str2));
+
+        // hashcode() => return hash code of a string
+        // System.out.println(str.hashCode());
+
+        // indexOf() return position of the first specified occurance --
+        // System.out.println(str.indexOf(str2));
+        // isempty() check weather a string isempty or not return true
+
+        System.out.println(str.isEmpty());
 
         sc.close();
 
