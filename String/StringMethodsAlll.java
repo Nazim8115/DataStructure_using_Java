@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class StringMethodsAlll {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String str = sc.nextLine();
+        // String str = sc.nextLine();
         // System.out.println("Original string : " + str);
         // charAt()
         // System.out.println(str.charAt(2));
@@ -21,7 +21,7 @@ public class StringMethodsAlll {
         // System.out.println(str.codePointCount(0, 6));
 
         // Compare two strings ignoring lower case and and upper case
-        String str2 = sc.nextLine();
+        // String str2 = sc.nextLine();
         // System.out.println(str.compareToIgnoreCase(str2));
         // concat => appends a string to the end of another string
         // String result = str.concat(str2);
@@ -65,9 +65,9 @@ public class StringMethodsAlll {
         // split() => split the string into an array of substring
         // String[] arr = str.split(",");
         // for (int i = 0; i < arr.length; i++) {
-        //     System.out.println(arr[i]);
+        // System.out.println(arr[i]);
         // }
-        
+
         // startswith() =>
 
         sc.close();
