@@ -22,12 +22,16 @@ public class PractisePrograms {
 
     // question -3 reverse the string
     public static String reverseString(String str) {
-        char arr[] = str.toCharArray();
+        // char arr[] = str.toCharArray();
         String newString = "";
-        int n = arr.length - 1;
-        for (int i = 0; i < arr.length; i++) {
-            newString += arr[n - i];
+        // int n = arr.length - 1;
+        // for (int i = 0; i < arr.length; i++) {
+        // newString += arr[n - i];
 
+        // }
+        int len = str.length() - 1;
+        for (int i = len; i >= 0; i--) {
+            newString += str.charAt(i);
         }
 
         return newString;
