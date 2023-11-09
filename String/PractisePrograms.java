@@ -20,11 +20,26 @@ public class PractisePrograms {
         return newString;
     }
 
+    // question -3 reverse the string
+    public static String reverseString(String str) {
+        char arr[] = str.toCharArray();
+        String newString = "";
+        int n = arr.length - 1;
+        for (int i = 0; i < arr.length; i++) {
+            newString += arr[n - i];
+
+        }
+
+        return newString;
+    }
+
     public static void main(String[] args) {
-        String str = "my name is khan and i am a software engineer";
+        // String str = "my name is khan and i am a software engineer";
         // printEvenLengthWord(str);
-        String res = insertString(str, -1, "hello");
-        System.out.println(res);
+        // String res = insertString(str, -1, "hello");
+        // System.out.println(res);
+
+        System.out.println(reverseString("nazim"));
 
     }
 }
