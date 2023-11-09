@@ -69,6 +69,11 @@ public class StringMethodsAlll {
         // }
 
         // startswith() =>
+        String s = "nazimkhan ";
+        System.out.println(s.substring(0, 5));// 0 included but 5 excluded...
+
+        String newString = "java " + "programing";
+        System.out.println(newString);
 
         sc.close();
 
