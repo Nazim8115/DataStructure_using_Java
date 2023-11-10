@@ -37,13 +37,25 @@ public class PractisePrograms {
         return newString;
     }
 
+    // question no 4 check palindrome
+
+    public static boolean checkPalindrome(String str) {
+        boolean res = false;
+        String rev = reverseString(str); // reverse string with using user defined function
+        if (rev.equals(str)) {
+            res = true;
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         // String str = "my name is khan and i am a software engineer";
         // printEvenLengthWord(str);
         // String res = insertString(str, -1, "hello");
         // System.out.println(res);
 
-        System.out.println(reverseString("nazim"));
+        // System.out.println(reverseString("nazim"));
+        System.out.println(checkPalindrome("papa"));
 
     }
 }
