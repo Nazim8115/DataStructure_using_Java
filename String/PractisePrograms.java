@@ -1,5 +1,7 @@
 package String;
 
+import java.util.Arrays;
+
 /**
  * PractisePrograms
  */
@@ -60,6 +62,31 @@ public class PractisePrograms {
         return res;
     }
 
+    // question 5
+    // Function to check whether two strings
+    // are anagram of each other
+    public static boolean areAnagram(char[] str1, char[] str2) {
+        // Get lengths of both strings
+        int n1 = str1.length;
+        int n2 = str2.length;
+
+        // If length of both strings is not
+        // same, then they cannot be anagram
+        if (n1 != n2)
+            return false;
+
+        // Sort both strings
+        Arrays.sort(str1);
+        Arrays.sort(str2);
+
+        // Compare sorted strings
+        for (int i = 0; i < n1; i++)
+            if (str1[i] != str2[i])
+                return false;
+
+        return true;
+    }
+
     public static void main(String[] args) {
         // String str = "my name is khan and i am a software engineer";
         // printEvenLengthWord(str);
@@ -67,7 +94,10 @@ public class PractisePrograms {
         // System.out.println(res);
 
         // System.out.println(reverseString("nazim"));
-        System.out.println(checkPalindrome("abba"));
+        // System.out.println(checkPalindrome("abba"));
+        char str1[] = { 't', 'e', 's', 't' };
+        char str2[] = { 't', 't', 'e', 'w' };
+        System.out.println(areAnagram(str1, str2));
 
     }
 }
