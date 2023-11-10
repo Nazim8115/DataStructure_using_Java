@@ -40,10 +40,22 @@ public class PractisePrograms {
     // question no 4 check palindrome
 
     public static boolean checkPalindrome(String str) {
-        boolean res = false;
-        String rev = reverseString(str); // reverse string with using user defined function
-        if (rev.equals(str)) {
-            res = true;
+        boolean res = true;
+        // String rev = reverseString(str); // reverse string with using user defined
+        // function
+        // if (rev.equals(str)) {
+        // res = true;
+        // }
+
+        int i = 0;
+        int j = str.length() - 1;
+        while (i < j) {
+            if (str.charAt(i) != str.charAt(j)) {
+                return false;
+            }
+            i++;
+            j--;
+
         }
         return res;
     }
@@ -55,7 +67,7 @@ public class PractisePrograms {
         // System.out.println(res);
 
         // System.out.println(reverseString("nazim"));
-        System.out.println(checkPalindrome("papa"));
+        System.out.println(checkPalindrome("abba"));
 
     }
 }
