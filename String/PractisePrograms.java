@@ -102,7 +102,7 @@ public class PractisePrograms {
     }
 
     public static void main(String[] args) {
-        // String str = "my name is khan and i am a software engineer";
+        String str = "my name is khan and i am a software engineer";
         // printEvenLengthWord(str);
         // String res = insertString(str, -1, "hello");
         // System.out.println(res);
@@ -114,7 +114,12 @@ public class PractisePrograms {
         // System.out.println(areAnagram(str1, str2));
 
         // newline("samiksha", "awasthi");
-        System.out.println(addNewCharacter("nazim", 'K'));
+        // System.out.println(addNewCharacter("nazim", 'K'));
+
+        // iterate loop over string
+        for (int i = 0; i < str.length(); i++) {
+            System.out.print(str.charAt(i) + " ");
+        }
 
     }
 }
