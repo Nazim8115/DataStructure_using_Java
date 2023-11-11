@@ -87,6 +87,13 @@ public class PractisePrograms {
         return true;
     }
 
+    // prograam 6 print new line strig in java
+    // Using System.lineSeparator() method
+    public static void newline(String str1, String str2) {
+        String newline = System.lineSeparator();
+        System.out.println(str1 + newline + str2);
+    }
+
     public static void main(String[] args) {
         // String str = "my name is khan and i am a software engineer";
         // printEvenLengthWord(str);
@@ -95,9 +102,11 @@ public class PractisePrograms {
 
         // System.out.println(reverseString("nazim"));
         // System.out.println(checkPalindrome("abba"));
-        char str1[] = { 't', 'e', 's', 't' };
-        char str2[] = { 't', 't', 'e', 'w' };
-        System.out.println(areAnagram(str1, str2));
+        // char str1[] = { 't', 'e', 's', 't' };
+        // char str2[] = { 'e', 't', 't', 's' };
+        // System.out.println(areAnagram(str1, str2));
+
+        newline("samiksha", "awasthi");
 
     }
 }
