@@ -92,6 +92,13 @@ public class PractisePrograms {
     public static void newline(String str1, String str2) {
         String newline = System.lineSeparator();
         System.out.println(str1 + newline + str2);
+        // usig \n
+        // System.out.println(str1 + '\n' + str2);
+    }
+
+    // program 7 add character to a string
+    public static String addNewCharacter(String str, char ch) {
+        return str += ch;
     }
 
     public static void main(String[] args) {
@@ -106,7 +113,8 @@ public class PractisePrograms {
         // char str2[] = { 'e', 't', 't', 's' };
         // System.out.println(areAnagram(str1, str2));
 
-        newline("samiksha", "awasthi");
+        // newline("samiksha", "awasthi");
+        System.out.println(addNewCharacter("nazim", 'K'));
 
     }
 }
