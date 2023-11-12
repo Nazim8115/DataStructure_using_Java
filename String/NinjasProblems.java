@@ -17,14 +17,24 @@ public class NinjasProblems {
 
     }
 
+    public static void printAllSubstring(String str) {
+        int l = str.length();
+        for (int i = 0; i < l; i++) {
+            for (int j = i; j < l; j++) {
+                System.out.println(str.substring(i, j));
+            }
+        }
+    }
+
     public static void main(String[] args) {
-        String str = "my name";
+        String str = "abcde";
         str = str.trim();
         String arr[] = str.split(" ");
         System.out.println(arr.length);
         // int res = countWords(str);
 
         // System.out.println(res);
+        printAllSubstring(str);
 
     }
 }
